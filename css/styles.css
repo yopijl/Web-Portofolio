@@ -11759,3 +11759,72 @@ html {
 .link-hover-effect:hover {
   color: #007BFF;
 }
+
+/* Default styling for larger screens */
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .button-container {
+      flex-direction: column;
+  }
+  .button-container a {
+      margin-bottom: 1rem;
+  }
+  .button-container a:last-child {
+      margin-bottom: 0;
+  }
+}
+
+/* Default styling for larger screens */
+.project-card {
+  display: flex;
+  align-items: center;
+}
+
+.project-image {
+  width: 300px;
+  height: 400px;
+}
+
+.project-description {
+  padding: 2rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .project-card {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .project-image {
+      margin-bottom: 1rem;
+  }
+}
+
+/* Resume Style */
+.responsive-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styling for smaller screens */
+@media (max-width: 768px) {
+  .responsive-container {
+      flex-direction: column;
+      align-items: center;
+  }
+  .responsive-container h2 {
+      margin-bottom: 1rem; /* Add margin to create space */
+  }
+  .responsive-container a {
+      margin-top: 1rem; /* Add margin to create space */
+  }
+}
